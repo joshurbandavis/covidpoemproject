@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>The Night Air: COVID Poetry Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+
+    .w3-third img {
+        margin-bottom: -6px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .w3-third img:hover {
+        opacity: 1
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+        style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+        <h3 class="w3-padding-64 w3-center"><b>COVID<br>POEM<br>PROJECT</b></h3>
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CREATE</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="read.html" onclick="w3_close()" class="w3-bar-item w3-button">READ</a>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+        <span class="w3-left w3-padding">COVID POEM PROJECT</span>
+        <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Push down content on small screens -->
+        <div class="w3-hide-large" style="margin-top:83px"></div>
+
+        <!-- Poetry Form-->
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+            <h4><b>CONTRIBUTE TO COVID POEM PROJECT</b></h4>
+            <div class="w3-content w3-justify" style="max-width:600px">
+                <h4>How to Contribute</h4>
+                <p>Some text about the project. lorem ipsum consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <form action="connect.php" method="post">
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer01"><b>Q1:</b> lorem ipsum consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <input type="text" class="form-control is-valid" id="adjective1" name="adjective1"
+                                placeholder="Adjective" value="adjective1" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer02"><b>Q2:</b> lorem ipsum consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <input type="text" class="form-control is-valid" id="noun1" name="noun1" value="noun1"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer03"><b>Q3:</b> blorem ipsum consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <input type="text" class="form-control is-valid" id="verb" name="verb" value="verb"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer04"><b>Q4:</b> lorem ipsum consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <input type="text" class="form-control is-valid" id="adjective2" name="adjective2" value="adjective2"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer05"><b>Q5:</b> lorem ipsum consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <input type="text" class="form-control is-valid" id="noun2" name="noun2" value="noun2"
+                                required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                    <label class="form-check-label" for="invalidCheck3">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button class="btn btn-primary" type="submit">Submit Poem</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- End page content -->
+    </div>
+    <!--
+    <script type="text/javascript">
+        function saveInput() {
+            var xmlhttp;
+            xmlhttp=new XMLHttpRequest();
+            xmlhttp.open("GET","insert.php?adj1="+document.getElementById("validationServer01").value+"&noun1="+document.getElementById("validationServer02").value+"&verb="+document.getElementById("validationServer03").value+"&adj2="+document.getElementById("validationServer04").value+"&noun2="+document.getElementById("validationServer02").value,false);
+            xmlhttp.send(null);
+        }
+    </script>
+-->
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+
+    </script>
+
+
+</body>
+
+</html>
