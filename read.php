@@ -56,26 +56,60 @@
         <div class="w3-hide-large" style="margin-top:83px"></div>
 
         <!-- Poetry Form-->
-        <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
+        <div class="w3-container w3-white w3-center w3-text-dark-grey w3-padding-32" id="about">
             <h4><b>COVID Poem Project</b></h4>
 
             <div class="w3-content w3-justify" style="max-width:600px">
-                <h4>About</h4>
-                <p> the night air, is a place to record our personal experiences during this pandemic through a single collective poem, which over time will reveal our shifting moods and vary perspectives across the world.  
-                    Unlike the pandemics that preceded this one, technology has served as not only a way to receive information but to connect and share information informally, personally with anyone, anywhere.
-                    I invite you to reflect on the last few months, not only the struggles but the sweet triumphs, the new connections, things you've discovered about yourself and others, your idea of happiness, 
-                    the right way forward, what you are leaving behind to make space for something new and more fulfilling and how you are coping and preparing for more?
+                <h4>{ poem }</h4>
+        
+                <p> 
+                <?php
+                
+                function randomArticle() {
+                    $articles = array("a", "the", "those", "that", "some", "the");
+                    $random_num = rand(0,5);  
+                    }
+
+                $servername = "sarahsud001.mysql.guardedhost.com";
+                $username = "sarahsud001_covidpoemproject";
+                $password = "!HCP12rt89";
+                $dbname = "sarahsud001_covidpoemproject";
+                
+                // Create connection
+                $conn = new mysqli($servername, $username, $password, $dbname);
+                // Check connection
+                if ($conn->connect_error) {
+                  die("Connection failed: " . $conn->connect_error);
+                }
+                
+                $sql = "SELECT ID, adjective1, noun1, verb, adjective2, noun2 FROM Poetry";
+                $result = $conn->query($sql);
+                
+                $articles = array("a", "the", "those", "that", "some", "the");
+                $random_num = rand(0,5);
+
+                if ($result->num_rows > 0) {
+                  // output data of each row
+                  while($row = $result->fetch_assoc()) {
+                    //echo $articles[$random_num]. " " . $row["adjective1"]. " " . $row["noun1"]. " " . $row["verb"]. " the " . $row["adjective2"]. " ". $row ["noun2"]. "<br>";
+                    echo  "The " . $row["adjective1"]. " " . $row["noun1"]. " " . $row["verb"]. " the " . $row["adjective2"]. " ". $row ["noun2"]. "<br>";
+
+                    //echo "id: " . $row["id"]. " - Name: " . $row["adjective1"]. " " . $row["adjective2"]. "<br>";
+                  }
+                } else {
+                  echo "0 results";
+                }
+                $conn->close();
+
+                ?>    
+                   
                 </p>
+
                 <hr class="w3-opacity">
 
                 </ul>
-
-                <p>the night air COVID poetry project is generously supported by a grant from the Houston Arts Alliance <br> 
-                    created by <b>Sarah Sudhoff</b> { https://www.sarahsudhoff.com/ } <br>
-                    design and engineered by <b>Josh Urban Davis</b> { http://joshurbandavis.com/ } <br></p>
             </div>
         </div>
-        
     </div>
 
 

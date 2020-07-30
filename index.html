@@ -31,12 +31,12 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>COVID<br>POEM<br>PROJECT</b></h3>
+        <h3 class="w3-padding-64 w3-center"><b>the night air</b> <br> COVID <br> poetry <br> project</h3>
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CREATE</a>
         <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-        <a href="read.html" onclick="w3_close()" class="w3-bar-item w3-button">READ</a>
+        <a href="read.php" onclick="w3_close()" class="w3-bar-item w3-button">READ</a>
     </nav>
 
     <!-- Top menu on small screens -->
@@ -57,68 +57,51 @@
 
         <!-- Poetry Form-->
         <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
-            <h4><b>CONTRIBUTE TO COVID POEM PROJECT</b></h4>
+            <h4><b>CONTRIBUTE TO THE NIGHT AIR</b></h4>
             <div class="w3-content w3-justify" style="max-width:600px">
                 <h4>How to Contribute</h4>
-                <p>Some text about the project. lorem ipsum consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <form action="connect.php" method="post">
+                <p> The Night Air COVID poetry project is a community poem created using techniques similar to the french surrealist poets. To contribute to the collaborative poem, answer all of the questions below using one or two words. <br> <br>
+                 Hints: <b>Adjectives</b> are words or phrase naming an attribute, added to or grammatically related to a noun to modify or describe it. <br> <br>
+                           <b> Nouns </b> are words (other than a pronoun) used to identify any of a class of people, places, or things ( common noun ), or to name a particular one of these ( proper noun ). <br> <br>
+                           <b> Verbs </b>are a word used to describe an action, state, or occurrence, and forming the main part of the predicate of a sentence, such as hear, become, happen. <br> <br>
+                
+                </p>      
+            
+                <form action="connect3.php" method="post">
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
-                            <label for="validationServer01"><b>Q1:</b> lorem ipsum consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
+                            <label for="validationServer01"><b>Q1:</b> How have you been feeling during the pandemic? <br></label>
                             <input type="text" class="form-control is-valid" id="adjective1" name="adjective1"
-                                placeholder="Adjective" value="adjective1" required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                                placeholder="Adjective"  required>
+                            
                         </div>
                         <br>
                         <div class="col-md-4 mb-3">
-                            <label for="validationServer02"><b>Q2:</b> lorem ipsum consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
-                            <input type="text" class="form-control is-valid" id="noun1" name="noun1" value="noun1"
+                            <label for="validationServer02"><b>Q2:</b> What was important to you before that is no longer essential? <br></label>
+                            <input type="text" class="form-control is-valid" id="noun1" placeholder="Noun"  name="noun1" 
                                 required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            
                         </div>
                         <br>
                         <div class="col-md-4 mb-3">
-                            <label for="validationServer03"><b>Q3:</b> blorem ipsum consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
-                            <input type="text" class="form-control is-valid" id="verb" name="verb" value="verb"
+                            <label for="validationServer03"><b>Q3:</b> What ritual or behavior from the past will you carry forward? <br></label>
+                            <input type="text" class="form-control is-valid" placeholder="Verb" id="verb" name="verb" 
                                 required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            
                         </div>
                         <br>
                         <div class="col-md-4 mb-3">
-                            <label for="validationServer04"><b>Q4:</b> lorem ipsum consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
-                            <input type="text" class="form-control is-valid" id="adjective2" name="adjective2" value="adjective2"
+                            <label for="validationServer04"><b>Q4:</b> Describe your experience with isolation. <br></label>
+                            <input type="text" class="form-control is-valid" placeholder="Adjective"  id="adjective2" name="adjective2" 
                                 required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            
                         </div>
                         <br>
                         <div class="col-md-4 mb-3">
-                            <label for="validationServer05"><b>Q5:</b> lorem ipsum consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. </label>
-                            <input type="text" class="form-control is-valid" id="noun2" name="noun2" value="noun2"
+                            <label for="validationServer05"><b>Q5:</b> What now is the most important thing in your life? <br></label>
+                            <input type="text" class="form-control is-valid" placeholder="Noun" id="noun2" name="noun2" 
                                 required>
-                            <div class="valid-feedback">
-                                Looks good!
-                            </div>
+                            
                         </div>
                     </div>
             </div>
