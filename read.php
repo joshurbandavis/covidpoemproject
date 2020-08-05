@@ -29,9 +29,9 @@
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center"
+    <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>the night air</b> <br> COVID <br> poetry <br> project</h3>
+        <h3 class="w3-padding-64 w3-center"><b>the night air</b> </h3>
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CREATE</a>
@@ -41,7 +41,7 @@
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-        <span class="w3-left w3-padding">COVID POEM PROJECT</span>
+        <span class="w3-left w3-padding">the night air</span>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
@@ -53,13 +53,13 @@
     <div class="w3-main" style="margin-left:300px">
 
         <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:83px"></div>
+        <div class="w3-hide-large" style="margin-top:100px"></div>
 
         <!-- Poetry Form-->
-        <div class="w3-container w3-white w3-center w3-text-dark-grey w3-padding-32" id="about">
-            <h4><b>COVID Poem Project</b></h4>
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about" style="height:100vh">
+            <h4><b>the night air</b></h4>
 
-            <div class="w3-content w3-justify" style="max-width:600px">
+            <div class="w3-content w3-left-align" style="max-width:600px">
                 <h4>{ poem }</h4>
         
                 <p> 
@@ -92,9 +92,9 @@
                   // output data of each row
                   while($row = $result->fetch_assoc()) {
                     //echo $articles[$random_num]. " " . $row["adjective1"]. " " . $row["noun1"]. " " . $row["verb"]. " the " . $row["adjective2"]. " ". $row ["noun2"]. "<br>";
-                    echo  "The " . $row["adjective1"]. " " . $row["noun1"]. " " . $row["verb"]. " the " . $row["adjective2"]. " ". $row ["noun2"]. "<br>";
-
-                    //echo "id: " . $row["id"]. " - Name: " . $row["adjective1"]. " " . $row["adjective2"]. "<br>";
+                    $article1 = randomArticle();
+                    $article2 = randomArticle();
+                    echo  "the " . $row["adjective1"]. " " . $row["noun1"]. " " . $row["verb"]. " the " . $row["adjective2"]. " ". $row ["noun2"]. ", <br>";
                   }
                 } else {
                   echo "0 results";
