@@ -15,7 +15,7 @@
     h3,
     h4,
     h5 {
-        font-family: "Optima", serif }
+        font-family: "Optima", "Didot", serif}
 
     .w3-third img {
         margin-bottom: -6px;
