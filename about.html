@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>The Night Air: COVID Poetry Project</title>
+<head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" href="/white.png" type="image/png" />
+</head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,7 +15,7 @@
     h3,
     h4,
     h5 {
-        font-family: "Raleway", sans-serif
+        font-family: "Optima", serif
     }
 
     .w3-third img {
@@ -24,6 +27,16 @@
     .w3-third img:hover {
         opacity: 1
     }
+    .footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100;
+        background-color: white;
+        color: darkgrey;
+        text-align: right;
+    }
 </style>
 
 <body class="w3-light-grey w3-content" style="max-width:1600px">
@@ -31,7 +44,7 @@
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center"
         style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-        <h3 class="w3-padding-64 w3-center"><b>the night air</b> </h3>
+        <h3 class="w3-padding-32 w3-center"><img src="full_logo.png" class="img-rounded" alt="the night air logo moon with text" style="width:300px;height:270px;" > </h3>
         <a href="javascript:void(0)" onclick="w3_close()"
             class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
         <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">CREATE</a>
@@ -53,17 +66,19 @@
     <div class="w3-main" style="margin-left:300px">
 
         <!-- Push down content on small screens -->
-        <div class="w3-hide-large" style="margin-top:100px"></div>
+        <div class="w3-hide-large" style="margin-top:95px"></div>
 
         <!-- Poetry Form-->
-        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about" style="height:100vh">
-            <h4><b>the night air</b></h4>
+        <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about" style="height:100%">
+            <!-- <h4><b>the night air</b></h4> -->
 
             <div class="w3-content w3-left-align" style="max-width:600px">
                 <h4>About</h4>
-                <p> the night air, is a place to record our personal experiences during this pandemic through a single collective poem, which over time will reveal our shifting moods and varying perspectives across the world.  
+                <p> Miasma, a now disbanded medical term originating in the middle ages, was once thought to be the root cause of former plagues and the spread of disease. Also known as "the night air", Miasma suggested that bad air or pollution spread illness. While many previous plagues were spread by animals, water, or infected food, COVID-19, ironically, is a disease spread through the air. <br><br>
+                    Unlike many previous plagues, we know how to slow and alter its spread. The spread of information, of support and compassion is one way we can heal and find and redefine the future for ourselves. <br><br>
+                    the night air, is a place to record our personal experiences during this pandemic through a single collective poem, which over time will reveal our shifting moods and varying perspectives across the world.  
                     Unlike the pandemics that preceded this one, technology has served as not only a way to receive information but to connect and share information informally, personally with anyone, anywhere. <br><br>
-                    I invite you to reflect on the last few months, not only the struggles but the sweet triumphs, the new connections, things you've discovered about yourself and others, your idea of happiness, 
+                    We invite you to reflect on the last few months, not only the struggles but the sweet triumphs, the new connections, things you've discovered about yourself and others, your idea of happiness, 
                     the right way forward, what you are leaving behind to make space for something new and more fulfilling and how you are coping and preparing for more.
                 </p>
                 <hr class="w3-opacity">
@@ -72,7 +87,8 @@
 
                 <p>the night air is generously supported by a grant from the Houston Arts Alliance <br> 
                     created by <a href="https://www.sarahsudhoff.com/"><b>Sarah Sudhoff</b></a> <br>
-                    design and engineered by <a href="http://joshurbandavis.com/"><b>Josh Urban Davis</b></a> <br></p>
+                    designed and engineered by <a href="http://joshurbandavis.com/"><b>Josh Urban Davis</b></a> <br></p>
+                    <br><br><br><br><br><br>
             </div>
         </div>
         
@@ -80,6 +96,9 @@
 
 
     <!-- End page content -->
+    <div class="footer">
+        <img src="white.png" alt="night air moon logo" style="width:100px;height:100px;">
+      </div>
     </div>
 
     <script>
