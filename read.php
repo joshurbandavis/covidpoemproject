@@ -53,7 +53,7 @@
 
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">the night air</span>
+        <span style="font-family:Didot;" class="w3-left w3-padding"><b>THE NIGHT AIR</b></span>
         <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
     </header>
 
@@ -134,9 +134,9 @@
 
 
     <!-- End page content -->
-    <div class="footer">
+    <!-- <div class="footer">
         <img src="white.png" alt="night air moon logo" style="width:100px;height:100px;">
-      </div>
+      </div> -->
     </div>
 
     <script>
