@@ -10,7 +10,7 @@ Welcome to **The Night Air**, a unique website that invites visitors to embark o
 
 ### Authorship
 
-Website created by Josh Urban Davis
+Website created by Josh Urban Davis (www.joshurbandavis.com)
 Project designed and developed in colaboration with Sarah Sudhoff and Josh Urban Davis
 Graphic design by Stacy Mullens Studio
 
@@ -30,7 +30,7 @@ Graphic design by Stacy Mullens Studio
 
 ## Support and Contact
 
-For any inquiries or to learn more about **The Night Air**, please reach out to us at [your contact email address].
+For any inquiries or to learn more about **The Night Air**, please reach out to us.
 
 ![The Night Air Title Logotype](logotype.png)
 
